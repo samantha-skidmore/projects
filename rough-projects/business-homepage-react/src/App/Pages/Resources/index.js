@@ -1,4 +1,9 @@
-import React from "react"
+// RESOURCES JS COMPONENT IN PAGES
+
+import React from "react";
+import { Switch, Route, Link } from "react-router-dom";
+
+import "../../Pages/pages.css";
 
 function Resources(props) {
     return (

@@ -5,20 +5,23 @@ import { Switch, Route, Link } from "react-router-dom";
 
 import Header from "./Header";
 import Navbar from "./Navbar";
-import Home from "./Navbar/Pages/Home";
-import AboutUs from "./Navbar/Pages/AboutUs";
-import Resources from "./Navbar/Pages/Resources";
-import ContactUs from "./Navbar/Pages/ContactUs";
-import MyAccount from "./Navbar/Pages/MyAccount";
+import Home from "./Pages/Home";
+import AboutUs from "./Pages/AboutUs";
+import Resources from "./Pages/Resources";
+import ContactUs from "./Pages/ContactUs";
+import MyAccount from "./Pages/MyAccount";
 
 import Main from "./Main";
 import Recipes from "./Main/Recipes";
-// import MyPantry from "./Main/MyPantry";
-// import Receipts from "./Main/Receipts";
+import MyPantry from "./Main/MyPantry";
+import Receipts from "./Main/Receipts";
 
-import "./Main/main.css";  
 import "./app.css";
- 
+import "./Header/header.css";
+import "./Navbar/navbar.css";
+import "./Main/main.css";
+import "./Pages/pages.css";
+
 function App(props) {
     return (
         <div className="containerAll">
@@ -38,11 +41,11 @@ function App(props) {
             <div>
                 <Switch>
                     <Route path="/Recipes" component={Recipes} />
-                    {/* <Route path="/MyPantry" component={MyPantry} />
-                    <Route path="/Receipts" component={Receipts} /> */}
+                    <Route path="/MyPantry" component={MyPantry} />
+                    <Route path="/Receipts" component={Receipts} />
                 </Switch>
             </div>
-         </div>
+        </div>
 
     )
 }

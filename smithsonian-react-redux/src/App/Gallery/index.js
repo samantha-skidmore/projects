@@ -6,7 +6,7 @@ import axios from "axios";
 
 import Loading from "../shared/Loading";
 import GalleryItem from "./GalleryItem";
-
+ 
 let galleryUrl = "https://api.collection.cooperhewitt.org/rest/?method=cooperhewitt.objects.getOnDisplay&access_token=c1323bc09366e44c10523f5a48cd89d7";
 
 export default class Gallery extends Component {

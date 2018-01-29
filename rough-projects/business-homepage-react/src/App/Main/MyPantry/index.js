@@ -1,4 +1,4 @@
-//MYPANTRY JS COMPONENT
+//MYPANTRY JS COMPONENT IN MAIN
 
 import React from "react";
 import { Switch, Route, Link } from "react-router-dom";
@@ -8,9 +8,11 @@ import "./mypantry.css";
 
 function myPantry(props) {
     return (
-        <div className="PantryBox">
-        </div>
-        <div className="PantryTitle">
+        <div className="Main">
+            <div className="PantryBox">
+            </div>
+            <div className="PantryTitle">
+            </div>
         </div>
     )
 }
