@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    border: 1px solid red;
+
+}
+.containerAll {
+   display: flex;
+   flex-wrap: wrap;
+   width: 100%;
+   Height: 100%;
+   
+}
+
+Header {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    height: 20%;
+    background-image: url("./images/FAMILY FEET IN WATER.jpg")
+
+}
+
+#hdrLeft {
+
+}
+
+#hdrRight {
+
+}
+
+#sidebarLeft {
+   
+}
+
+#sidebarRight {
+    
+}
+
+.containerMain {
+   
+}
+
+#beginning {
+    background-image: url("./images/beginning.jpeg")
+}
+
+#ourFam {
+    background-image: url("./images/ourFamHistory.jpeg")
+}
+
+#kids {
+    background-image: url("./images/letterK.jpeg")
+}
+
+#blogs {
+    background-image: url("./images/vlog.jpeg");
+}
+
+#skidmoreHistory {
+    background-image: url("./images/skidmore.png");
+}
+
+#stewartHistory {
+    background-image: url("./images/stewart.png");
+}
+
+Footer {
+
+}
+
+#ftrLeft {
+
+}
+
+#ftrRight {
+
+}

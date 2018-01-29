@@ -1,0 +1,39 @@
+/*NAVBAR CSS */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+@import url('https://fonts.googleapis.com/css?family=Rammetto+One');
+@import url('https://fonts.googleapis.com/css?family=Architects+Daughter');
+
+
+.Nav>a {
+    text-decoration: none;
+    color: cornsilk;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+/* :Link {
+    text-decoration: none;
+    color: cornsilk;
+} */
+
+.Nav {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content:center;
+    justify-content: center;
+    text-align: center;
+    color: cornsilk;
+    background-color: hsl(31, 47%, 15%);
+    font-family: 'Architects Daughter', cursive; 
+    font-size: 25px;
+    height: 10%;
+    
+}
+.Nav:hover { 
+    background-color:black;
+    color: cornsilk;
+}

@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+
+}
+
+/* 
+.flexContainer {
+    display: flex;
+    height: 200px;
+    margin: 1em 0;
+    border: 5px solid #333;
+    flex-wrap: wrap;
+    align-items: center;
+    color: black;
+} */
+
+div {
+    display: flex;
+    height: 125px;
+    width: 125px;
+    border: solid black;
+    color: white;
+}
+     
+body {
+    width: 90%;
+    margin: auto;
+    padding: 2%;
+    line-height: 1.6;
+    background-color: ivory;
+    color: black;
+    background-image: url("./pantry.jpeg"); 
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+    /* font-family: 'Audiowide', bold;
+    margin: 0;
+    font-family: 'Rock Salt', cursive;
+    font-family: 'Shadows Into Light Two', cursive; */
+    font-family: 'Architects Daughter', cursive;
+    /* font-family: 'Waiting for the Sunrise', cursive;
+    font-family: 'Englebert', sans-serif; */
+
+}
+
+@media (max-width: 400px) {
+    .nav-main {
+        display: none;
+    }
+
+@media (min-width: 401px) {
+    .nav-mini {
+        display: none;
+    }
+
+h1 {
+    font-size: 80px;
+    text-align: center;
+    color: black;
+    font-style: bold;
+    font-family: 'Englebert', sans-serif;
+    margin-top: 590px;
+    margin-bottom: 0;
+    margin-right: 50px; 
+    position: relative;
+}
+
+
+footer {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    justify-content: space-around;
+    background-color: ivory;
+
+}
+
+
+
+/* ul {
+    list-style-type: none;
+    margin: 0;
+    align-content: top;
+    padding: 0;
+    overflow: hidden;
+    background-color: clear: both;;
+    font-family: 'Architects Daughter', cursive;
+    font-style: bold;
+    font-size: 20px;
+}
+
+li {
+    float: right;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: black; bold;
+    font-size: 16px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: tan;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+ 
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+} */
+
+/* nav {
+    display: inline-block;
+    margin: 0 3em;
+} */

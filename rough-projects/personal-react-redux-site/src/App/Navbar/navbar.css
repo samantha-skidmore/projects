@@ -1,0 +1,32 @@
+/*NAVBAR CSS */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+@import url('https://fonts.googleapis.com/css?family=Rammetto+One');
+@import url('https://fonts.googleapis.com/css?family=Architects+Daughter');
+
+
+:link {
+    text-decoration: none;
+    color: midnightblue;
+}
+
+.Links {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content:center;;
+    justify-content: space-around;
+    text-align: center;
+    color: midnightblue;
+    background-color: salmon;
+    font-family: 'Architects Daughter', cursive; 
+    font-size: 25px;
+    height: 10%;
+    
+}
+.Links:hover { 
+    background-color: lightsalmon;
+}

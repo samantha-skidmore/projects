@@ -1,0 +1,41 @@
+
+* { 
+    box-sizing: border-box;
+    margin: 0;
+    border: 1px solid black;
+}
+{
+@import url('https://fonts.googleapis.com/css?family=Rammetto+One');
+@import url('https://fonts.googleapis.com/css?family=Architects+Daughter');
+}
+
+.containerAll {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: bottom;
+    text-align: bottom;
+    vertical-align: bottom;
+    background-color: beige;
+    font-family: 'Architects Daughter', cursive;
+   
+}
+
+.Header1 {
+    background-image: url("../App/images/family-pic-words.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100vw;
+    height: 500px;
+   
+}
+
+.containerMain {
+}
+
+@media {
+    max-width: 500px;
+}

@@ -1,0 +1,47 @@
+/*NAVBAR CSS */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+@import url('https://fonts.googleapis.com/css?family=Rammetto+One');
+@import url('https://fonts.googleapis.com/css?family=Architects+Daughter');
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+nav {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 0;
+    border-style: solid;
+    border-color: black;
+    height: 10%;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    background-color: tan;
+    font-family: 'Architects Daughter', cursive;
+}
+
+nav a {
+    display: flex;
+    flex-wrap: nowrap; 
+    align-content:center;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    font-size: 25px;
+    color: black;
+    font-family: 'Architects Daughter', cursive;
+
+}
+a:hover {
+    background-color: tan;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    
+}

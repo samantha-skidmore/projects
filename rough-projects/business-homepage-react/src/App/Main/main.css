@@ -1,0 +1,23 @@
+/*MAIN CSS */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    border: solid 1px black;
+} 
+@import url('https://fonts.googleapis.com/css?family=Rammetto+One');
+@import url('https://fonts.googleapis.com/css?family=Architects+Daughter');
+ 
+ .All {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    /* height: 100vh; */
+    margin: 0;
+    vertical-align: 0;
+    text-align: center;
+    align-content: center;
+    background-color: black;
+    background-repeat: no-repeat;
+    font-family: 'Architects Daughter', cursive;
+}

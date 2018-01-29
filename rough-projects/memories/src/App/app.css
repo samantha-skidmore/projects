@@ -1,0 +1,75 @@
+* { 
+    box-sizing: border-box;
+    margin: 0;
+    border: 1px solid black;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Rammetto+One');
+@import url('https://fonts.googleapis.com/css?family=Architects+Daughter');
+
+
+.containerAll {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: bottom;
+    text-align: bottom;
+    vertical-align: bottom;
+    background-color: cornsilk;
+    color: black;
+    font-family: 'Architects Daughter', cursive;
+   
+}
+.Header1 {
+    background-image: url("../App/images/family-memory-image.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100vw;
+    height: 100vh;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+   
+}
+
+.Memory {
+    display: flex;
+    margin: 2em;
+    background-size: contain;
+    background-image: url("../App/images/ourFamHistory.jpeg");
+    width: 395px;
+    height: 270px;
+    border: solid black 10px;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-self: center;
+
+}
+
+.Header1 {
+
+@media (max-width: 400px){
+    height: 58vh;
+}
+
+@media (max-width: 500px){
+    height: 73vh;
+}
+
+@media (max-width: 600px) {
+    height: 88vh;
+}
+
+@media (max-width: 730px) {
+    height: 100vh;
+}
+
+@media (max-width: 800px) {
+    height: 150vh;
+}
+
+}

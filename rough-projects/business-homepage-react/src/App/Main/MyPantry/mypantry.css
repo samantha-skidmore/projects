@@ -1,0 +1,45 @@
+/* MYPANTRY CSS */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+} 
+
+@import url('https://fonts.googleapis.com/css?family=Rammetto+One');
+@import url('https://fonts.googleapis.com/css?family=Architects+Daughter');
+
+.PantryBox {
+    background-image: url("../../images/pantry4.jpeg");
+    display: flex;
+    flex-wrap: nowrap;
+    width: 315px;
+    height: 300px;
+    align-self: flex-start; 
+    border-color: black;
+    background-size: 112%;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;    
+ }
+
+ .PantryTitle {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    font-family: 'Architects Daughter', cursive;
+    color: black;
+    font-size: 40px;
+    text-justify: center;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+ }
+
