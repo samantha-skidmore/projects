@@ -1,1 +1,0 @@
-This is my /projects/v-school folder of my completed projects for V School.

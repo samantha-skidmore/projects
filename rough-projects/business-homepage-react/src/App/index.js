@@ -11,10 +11,10 @@ import Resources from "./Pages/Resources";
 import ContactUs from "./Pages/ContactUs";
 import MyAccount from "./Pages/MyAccount";
 
-import Main from "./Main";
-import Recipes from "./Main/Recipes";
-import MyPantry from "./Main/MyPantry";
-import Receipts from "./Main/Receipts";
+import Main from "../App/Main";
+import Recipes from "../App/Main/Recipes";
+import MyPantry from "../App/Main/MyPantry";
+import Receipts from "../App/Main/Receipts";
 
 import "./app.css";
 import "./Header/header.css";

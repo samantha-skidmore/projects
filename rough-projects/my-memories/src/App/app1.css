@@ -1,0 +1,223 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    border: 1px solid black;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Rammetto+One');
+@import url('https://fonts.googleapis.com/css?family=Architects+Daughter');
+
+ 
+.wrapper {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 2fr 2fr auto;
+    grid-template-areas: 
+    "hdr", 
+    "ourFam", 
+    "famHist", 
+    "kids", 
+    "recipe", 
+    "skid", 
+    "stew", 
+    "ftr";
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    text-align: bottom;
+    vertical-align: center;
+    background-color: cornsilk;
+    color: black;
+    font-family: 'Architects Daughter', cursive;
+}
+#box {
+    display: flex;
+    width: 500px;
+    height: 500px;
+    border-color: black;
+}
+
+.Header1 {
+    grid-area: "hdr";
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-image: url("../App/images/family-memory-image.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.ourFam {
+    grid-area: "ourFam";
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 2em;
+    background-size: contain;
+    background-image: url("../App/images/FAMILY FEET IN WATER.jpg ");
+    width: 395px;
+    height: 270px;
+    border: solid black 10px;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-self: center;
+}
+
+.famHist {
+    grid-area: "famHist";
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 2em;
+    background-size: contain;
+    background-image: url("../App/images/ourFamHistory.jpeg");
+    width: 395px;
+    height: 270px;
+    border: solid black 10px;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-self: center;
+}
+
+.kids {
+    grid-area: "kids";
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-size: contain;
+    background-image: url("../App/images/letterK.jpeg ");
+    width: 395px;
+    height: 270px;
+    border: solid black 10px;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-self: center;
+}
+
+.recipe {
+    grid-area: "recipe";
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-size: contain;
+    background-image: url("../App/images/kitchen-cookbook.jpeg");
+    width: 395px;
+    height: 270px;
+    border: solid black 10px;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-self: center;
+}
+
+.skid {
+    grid-area: "skid";
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-size: contain;
+    background-image: url("../App/images/skidmore.png");
+    width: 395px;
+    height: 270px;
+    border: solid black 10px;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-self: center;
+}
+
+.stew {
+    grid-area: "stew";
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-size: contain;
+    background-image: url("../App/images/stewart.png");
+    width: 395px;
+    height: 270px;
+    border: solid black 10px;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-self: center;
+}
+
+footer {
+    grid-area: "ftr";
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* .Header1 {
+    @media (max-width: 400px) {
+        height: 58vh;
+    }
+    @media (max-width: 500px) {
+        height: 73vh;
+    }
+    @media (max-width: 600px) {
+        height: 88vh;
+    }
+    @media (max-width: 730px) {
+        height: 100vh;
+    }
+    @media (max-width: 800px) {
+        height: 150vh;
+    }
+} */
+
+/* 
+h6 {
+    align-content: bottom;
+    align-items: bottom;
+    align-self: bottom;
+    justify-content: bottom;
+    justify-items: bottom;
+    justify-items: bottom;
+    vertical-align: bottom;
+    margin-top: 49.5%;
+    margin-left: 85%;
+    font-size: 12px;
+    border: none;
+} */
+
+/* 
+
+.Nav {
+    grid-area: nav;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    text-align: center;
+    background-color: tan;
+    color: cornsilk;
+    background-color: hsl(31, 47%, 15%);
+    font-family: 'Architects Daughter', cursive; 
+    font-size: 25px;
+}
+
+.Nav>a {
+    text-decoration: none;
+    color: cornsilk;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.Nav:hover { 
+    background-color:black;
+    color: cornsilk;
+} */

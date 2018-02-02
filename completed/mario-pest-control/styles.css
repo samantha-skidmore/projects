@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+
+} 
+     
+body {
+    background-image: url("./backgroundMario.png"); 
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+    font-family: 'Audiowide', bold;
+    margin: 0;
+}
+
+h1 {
+    font-size: 60px;
+    text-align: right;
+    color: darkblue;
+    font-style: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 50px; 
+    position: relative;
+}
+
+h2{
+    font-size: 45px;
+    color: darkblue;
+    position: relative;
+    text-align: right;
+    margin: 10px 150px 10px 80px;
+}
+
+.baddies{
+    height: 355px;
+    width: 50%;
+    margin: auto 0 auto 45%;
+    position: relative;
+}
+
+.baddie{
+    width: 180px;
+    height: 355px;
+    background-repeat: no-repeat;
+    background-size: 85%;
+    background-position: top;
+    padding: 5px;
+    border: solid;
+    border-style: double;
+    border-width: 15px;
+}
+.goomba{
+    background-image: url("./goomba.png");
+    position: absolute;
+}
+
+.bobomb{
+    background-image: url("./bobomb.png");
+    position: absolute;
+    right: 0;
+}
+
+.cheep{
+    background-image: url("./cheepCheep.png");
+    transform: translateX(-50%);
+    position: absolute;
+    left: 50%;
+}
+
+.info {
+    position: absolute;
+    bottom: 0;
+}
+
+footer {
+    font-size: 12px;
+    position: fixed;
+    transform: translateX(-10%);
+    left: 50%;
+    bottom: 0;
+    width: 60%;
+    color: black;
+    text-align: center;
+}

@@ -49,9 +49,7 @@ export default class Gallery extends Component {
                     </Switch>
 
                 </div>
-
         )
     }
-
 }
 

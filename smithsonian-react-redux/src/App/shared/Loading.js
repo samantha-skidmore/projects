@@ -1,4 +1,6 @@
-import React from "react"
+//LOADING INDEX.JS
+
+import React from "react";
 
 function Loading(props) {
     return (

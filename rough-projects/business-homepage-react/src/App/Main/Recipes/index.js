@@ -13,6 +13,9 @@ import "../../../App/app.css";
 
 let RecipeUrl = `https://api.edamam.com/search?q=chicken&app_id=$edd7afa0&app_key=$aa055878b1e094fa18d9e9675fdf10d9&from=0&to=3&calories=gte%20591,%20lte%20722&health=alcohol-free`;
 
+
+
+
 // export default class RecipeItem extends Component {
 //     constructor(props) {
 //         super(props);
