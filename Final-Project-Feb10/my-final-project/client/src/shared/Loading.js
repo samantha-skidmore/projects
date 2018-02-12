@@ -1,8 +1,8 @@
-// shared/Loading.js
+// client/src/shared/Loading.js 
 
 import React from "react";
 
-function Loading(props) {
+function Loading() {
     return (
         <div>
             <p>Loading...</p>

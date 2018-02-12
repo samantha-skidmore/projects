@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+}
+
+.recipePage {
+    
+}
+
+/* button {
+    background-color: black;
+    color: blanchedalmond;
+    font-size: 20px;
+}
+
+.onSubmitMain {
+    background-color: blanchedalmond;
+    color: black;
+
+} */

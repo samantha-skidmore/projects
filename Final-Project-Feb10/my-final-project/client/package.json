@@ -1,5 +1,5 @@
 {
-  "name": "server-api-notes",
+  "name": "my-final-project",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -9,12 +9,14 @@
     "express": "^4.16.2",
     "mongoose": "^5.0.3",
     "morgan": "^1.9.0",
+    "node-restful": "^0.2.6",
     "nodemon": "^1.14.12",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.0",
+    "redux": "^3.7.2",
     "uuid": "^3.2.1"
   },
   "scripts": {
