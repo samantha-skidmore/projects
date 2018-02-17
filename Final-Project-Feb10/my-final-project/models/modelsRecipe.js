@@ -1,5 +1,5 @@
 // BACK END USING EXPRESS/MONGOOSE 
-// my-final-project/models/index.js
+// my-final-project/models/modelsRecipe.js
 
 //Dependencies
 const express = require("express");
@@ -13,41 +13,13 @@ const RecipeSchema = new mongoose.Schema({
         type: String,
         required: true
     }, 
-
+ 
     notes: {
         type: String,
         required: false   
     },
   
-    ingredient1: {
-        type: String,
-        required: false
-    },
-
-    ingredient2: {
-        type: String,
-        required: false
-    },
-
-    ingredient3: {
-        type: String,
-        required: false
-    },
-
-    ingredient4: {
-        type: String,
-        required: false
-    },
-
-    ingredient5: {
-        type: String,
-        required: false
-    },
-
-    ingredient6: {
-        type: String,
-        required: false
-    },
+    ingredients:[String],
 
     instructions: {
         type: String,
@@ -58,3 +30,4 @@ const RecipeSchema = new mongoose.Schema({
 
 //Return Model
 module.exports = restful.model("modelsRecipe", RecipeSchema);
+ 

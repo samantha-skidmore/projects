@@ -490,6 +490,12 @@ That way it gets the remove recipe and everything.
 
 How do I tell my form it is an edit form and not an add form?  
 
+From Bob/Databases 1
+
+Schema is a blueprint
+
+We need to create a model that helps us create the database
+
 
 
         

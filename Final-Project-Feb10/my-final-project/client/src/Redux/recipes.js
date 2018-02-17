@@ -1,4 +1,7 @@
+// FRONT END USING REACT
+// STUFF FOR THE CLIENT
 // src/Redux/recipes.js 
+
 // this is where all of the stuff will happen including the state of the array 
  
 const recipesReducer = (prevRecipes = [], action) => {
@@ -8,8 +11,8 @@ const recipesReducer = (prevRecipes = [], action) => {
       
 
         case "EDIT_RECIPE":
-            return [...prevRecipes].map((recipe, i) => {
-                if (i === action.index) {
+            return [...prevRecipes].map((recipe, id) => {
+                if (id === action.id) {
                     return action.updatedRecipe;
                 } else {
                     return recipe;
@@ -17,8 +20,8 @@ const recipesReducer = (prevRecipes = [], action) => {
             });
             
         case "REMOVE_RECIPE":
-            return [...prevRecipes].filter((recipe, i) => {
-                return i !== action.index;
+            return [...prevRecipes].filter((recipe, id) => {
+                return id !== action.id;
             })
         default:
             return prevRecipes;
@@ -30,19 +33,19 @@ export const addRecipe = (recipe) => {
         type: "ADD_RECIPE",
         recipe
     }
-}
+}  
 
-export const editRecipe = (updatedRecipe, index) => {
+export const editRecipe = (updatedRecipe, id) => {
     return {
         type: "EDIT_RECIPE",
         updatedRecipe,
-        index
+        id
     }
 }
-export const removeRecipe = (index) => {
+export const removeRecipe = (id) => {
     return {
         type: "REMOVE_RECIPE",
-        index
+        id
     }
 }
 

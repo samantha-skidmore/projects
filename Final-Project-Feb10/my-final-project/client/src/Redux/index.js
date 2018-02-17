@@ -1,3 +1,5 @@
+// FRONT END USING REACT
+// STUFF FOR THE CLIENT
 // src/Redux/index.js 
 
 import {createStore, combineReducers} from "redux";
@@ -13,4 +15,4 @@ store.subscribe(() => {
 })
 
 export default store; 
-   
+     

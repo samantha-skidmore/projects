@@ -7,8 +7,7 @@ const modelsRecipe = require("../models/modelsRecipe");
 
 //Routes
 modelsRecipe.methods(["get", "put", "post", "delete"]);
-modelsRecipe.register(recipeRouter, "/recipesDatabase");
 
 
 //Return Router
-module.exports = recipeRouter;
+module.exports = recipeRouter; 

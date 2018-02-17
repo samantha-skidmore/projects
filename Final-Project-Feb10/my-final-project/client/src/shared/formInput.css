@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mainTitle {
+    margin: 0;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.heads {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.inputBox {
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+
+}
+
+.btn {
+    display: inline-block;
+    color: rgb(184, 151, 109);
+    background-color: black;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 18px;
+    font-weight: bolder;
+    text-decoration: none;
+    padding: 1em 1em;
+    border: 2px solid black;
+    margin: .5em 0;
+}
+
+.btn:hover {
+    background:rgb(113, 8, 8);
+    color: oldlace;
+}

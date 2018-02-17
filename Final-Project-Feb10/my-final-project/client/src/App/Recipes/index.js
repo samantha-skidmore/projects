@@ -1,23 +1,27 @@
+// FRONT END USING REACT
+// STUFF FOR THE CLIENT
 // src/App/Recipes/index.js 
 
-import React from "react";
+import React from "react"; 
 import { connect } from "react-redux";
-import Recipe from "./Recipe";
+import "../Styles/styles.css"
 
 function Recipes(props) {
     let { recipes } = props;
-    let recipeComponents = recipes.map((recipe, i) => {
-        return <Recipe key={i + recipe.name} {...recipe} index={i}></Recipe>
+    let recipeComponents = recipes.map((recipes, id) => {
+        return <Recipes key={id + recipes.name} {...recipes} _id={id}></Recipes>
     })
-    return (
+    return ( 
         <div>
             {recipeComponents}
+                
         </div>
     )
-} 
+}  
 
 const mapStateToProps = (state) => {
     return { recipes: state.recipes }
 }
 
 export default connect(mapStateToProps, {})(Recipes);
+ 

@@ -1,5 +1,5 @@
 // BACK END USING EXPRESS/MONGOOSE 
-// my-final-project/routes/index.js
+// my-final-project/routes/routesRecipe.js
 
 //Dependencies
 const express = require("express");
@@ -8,40 +8,69 @@ const recipeRouter = express.Router();
  
 //Models
 const modelsRecipe = require("../models/modelsRecipe");
-const routesRecipe = require("../routes/routesRecipe");
-const data = require("../recipesDatabase");
 
 //Routes
-recipeRouter.get("/recipesDatabase", function(req, res){
-    res.send("API is Working");
-})
+recipeRouter.route("/") 
 
-// recipeRouter.route("/") 
     .get((req, res) => {
-        RecipeSchema.find((err, foundRecipe) => {
+        modelsRecipe.find((err, foundRecipe) => {
             if (err) {
                 console.error(err);
             } else {
                 res.send(foundRecipe);
             }
         });
-     
-        routesRecipe.get("/routes", function (req, res) {
-            res.send("routesRecipeGet");
-        });
+    })
 
-        routesRecipe.post("/routes", function (req, res) {
-            res.send("routesRecipePost");
+    .post((req, res) => {
+        let recipe = new modelsRecipe(req.body);
+        modelsRecipe.save((err, savedRecipe) => {
+            if (err) {
+                console.error(err);
+            } else {
+                res.send(savedRecipe);
+            }
         });
+    }) 
+    
 
-        routesRecipe.put("/routes/", function (req, res) {
-            res.send("routesRecipePut");
-        });
-
-        routesRecipe.delete("/routes", function (req, res) {
-            res.send("routesRecipeDelete");
+recipeRouter.route("/:id")
+    .delete((req, res) => {
+        let { id } = req.params;
+        modelsRecipe.findByIdAndRemove(id, (err, removedRecipe) => {
+            if (err) {
+                console.error(err);
+            } else {
+                res.send(removedRecipe);
+            }
         })
-    });
+    })
+
+    .put((req, res) => {
+        let { id } = req.params;
+        modelsRecipe.findByIdAndUpdate(id, req.body, { new: true }, (err, updatedRecipe) => {
+            if (err) {
+                console.error(err);
+            } else {
+                res.send(updatedRecipe); 
+            }
+        });
+    }) 
+    
+    .get((req, res) => {
+        let { id } = req.params;
+        modelsRecipe.findOne({ _id: id }), ((err, foundRecipe) => {
+            if (err) {
+                console.error(err);
+            } else {
+                res.send(foundRecipe);
+            }
+        });
+    }); 
+
+
 
 //Return Router
 module.exports = recipeRouter;
+
+
