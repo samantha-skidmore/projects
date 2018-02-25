@@ -2,7 +2,6 @@
 // STUFF FOR THE CLIENT
 // src/Redux/recipes.js 
 
-import React from "react";
 import axios from "axios";
 
 const recipesUrl = "http://localhost:8080/recipes/";
@@ -11,7 +10,7 @@ const recipesReducer = (prevRecipes = [], action) => {
     switch (action.type) {
         case "ADD_RECIPE":
             return [...prevRecipes, action.recipe]
-      
+       
 
         case "EDIT_RECIPE":
             return [...prevRecipes].map((recipe, id) => {

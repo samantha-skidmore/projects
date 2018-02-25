@@ -19,7 +19,7 @@ class Form extends Component {
                 ingredient: "",
                 instructions: instructions || ""
             },
-            ingredients: ingredients || []
+            ingredients: ingredients || [] 
         }
 
         this.handleChange = this.handleChange.bind(this);
@@ -80,7 +80,7 @@ class Form extends Component {
     handleSubmit(e) {
         e.preventDefault();
         this.props.submit(this.state.inputs, this.props.id);
-        this.props.clear ? this.clearInputs() : null;
+        // this.props.clear ? this.clearInputs() : null;
 
         if (this.props.add) {
             this.props.addRecipe(this.state.inputs);
@@ -88,12 +88,13 @@ class Form extends Component {
         } else {
             this.props.editRecipe(this.props.recipe._id, this.state.inputs);
         }
+    }
 
-    render() 
+    render() { 
         let { title, notes, ingredient, instructions } = this.state.inputs;
         let { ingredients } = this.state;
         
-        return () {
+         return (
             <div className="formSubmit">
                 <form onSubmit={this.handleSubmit}>
 
@@ -112,13 +113,13 @@ class Form extends Component {
 
                 </form>
             </div>    
-        }
-    };
-}
-
+        
+         )
+     }
+};
 const mapStateToProps = (state) => {
-    return (
-        state.inputs
-    )
+    return {
+        recipes: state.inputs
+    }
 }
-export default connect(mapStateToProps, { addRecipe, editRecipe })(Form);
+export default connect(mapStateToProps, (addRecipe, editRecipe)(Form)); 

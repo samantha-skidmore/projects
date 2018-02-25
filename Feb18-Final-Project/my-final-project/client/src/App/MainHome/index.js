@@ -7,17 +7,18 @@ import Header from "../Header";
 import PagesNav from "../../PagesNav";
 import PagesMain from "../../PagesMain";
 import Footer from "../Footer";
-import "../App/Styles/styles.css";
+import "../Header/header.css";
+import "../Styles/styles.css";
 
 function MainHome(props) {
     return (
-        <div className="Main">
+        <div className="MainHomeContainer">
             <Header />
             <PagesNav />
             <PagesMain />
             <Footer />
         </div>
     )
-}
+} 
 
 export default MainHome;

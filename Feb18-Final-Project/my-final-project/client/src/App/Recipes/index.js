@@ -13,7 +13,7 @@ function Recipes(props) {
     })
     return ( 
         <div>
-            {recipeComponents}
+            {recipeComponents} 
                 
         </div>
     )

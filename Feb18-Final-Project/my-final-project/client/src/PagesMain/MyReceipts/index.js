@@ -10,4 +10,4 @@ function MyReceipts(props) {
 
     )
 }
-export default MyReceipts;
+export default MyReceipts; 

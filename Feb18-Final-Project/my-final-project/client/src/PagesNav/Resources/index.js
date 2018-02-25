@@ -7,7 +7,7 @@ import "../../App/Styles/styles.css";
 
 function Resources(props) {
     return (
-        <div className="Resources">
+        <div className="Resources"> 
             <h4>Resources</h4>
         </div>
     )

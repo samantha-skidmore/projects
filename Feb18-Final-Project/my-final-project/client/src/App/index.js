@@ -4,13 +4,12 @@
  
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import NavLinks from "../PagesNav/NavLinks";
 import Home from "../PagesNav/Home";
 import FAQs from "../PagesNav/FAQs";
 import AddRecipe from "../PagesNav/AddRecipe";
 import FindRecipe from "../PagesNav/FindRecipe";
 import Resources from "../PagesNav/Resources";
-import "../App/Styles/styles.css";
+import "../App/Styles/styles.css";  
 
 function App(props) {
     return (

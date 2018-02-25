@@ -20,4 +20,4 @@ function PagesMain(props) {
     )
 }
 
-export default PagesMain;
+export default PagesMain; 

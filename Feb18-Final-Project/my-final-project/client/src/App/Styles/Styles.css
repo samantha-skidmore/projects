@@ -8,25 +8,28 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background: black;
-    color: #fff;
+    background: white;
+    color: black;
     font-size: 1.1em;
     line-height: 1.5;
     text-align: center;
 } 
-
-img {
+.MainHomeContainer {
+    width: 100%;
+    height: 100vh;
+}
+/* img {
     display: block;
     width: 100%;
     height: auto;    
-}
+} */
 
 p {
     margin: 0;
     padding: 1em 0;
 }
 
-button {
+/* button {
     display: inline-block;
     color: rgb(184, 151, 109);
     background-color: black;
@@ -42,7 +45,8 @@ button {
 button:hover {
     background:rgb(113, 8, 8);
     color: oldlace;
-}
+    text-decoration: none;
+} */
 
 h1 {
     margin: 0;
@@ -61,12 +65,6 @@ h1 {
     text-align: center; */
 }
 
-header h1 {
-    padding-top: 100px;
-    padding-bottom: 0;
-
-}
-
 h2 {
     margin: 0;
     padding: 1em 0;
@@ -74,6 +72,7 @@ h2 {
     padding: 1em 0;
     font-family: 'Architects Daughter', cursive;
     font-size: 20px;
+    text-decoration: none;
 }
 
 h3 {
@@ -88,10 +87,11 @@ h4 {
     margin: 0;
     font-family: 'Architects Daughter', cursive;
     font-size: 50px;
+    text-decoration: none;
 }
 
 /* App Footer */
-
+/* 
 #main-footer {
     padding: 2em;
     background:rgb(184, 151, 109);;
@@ -130,55 +130,31 @@ h4 {
     text-decoration: none;
     font-size: 25px;
     font-weight: bolder;
-}
+} */
 
 
-/* App Header  */
-
-#showcase {
-    min-height: 450px;
-    color: #fff;
-    text-align: center;
-}
-
-#header {
-    padding-top: 100px;
-    padding-bottom: 0;
-    padding: 0 1.5em;
-}
-
-#showcase .bg-image {
-    position: absolute;
-    background: #333 url("././images/pantry.jpeg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 450px;
-    z-index: -1;
-}
 
 /* App MainHome  */
 
-.Main {
+/* .Main {
     width: 100%;
     height: auto;
     display: grid;
     padding: 2em 1em 1em; 
     border: 5px solid  rgb(184, 151, 109);    
-}
+} */
 
 /* App Recipes  */
 
-.RecipePage {
+/* .RecipePage {
     
-}
+} */
 
 /* PagesMain  */
-
+/* 
 .MainPages {
     
-}
+} */
 
 .HomeLinks {
   text-decoration: none;
@@ -206,7 +182,7 @@ h4 {
 }
 
 /* PagesNav  */
-
+/* 
 .NavPages {
     background: rgb(184, 151, 109);
     color: #333;
@@ -232,20 +208,20 @@ h4 {
 
 .Resources {
 
-}
+} */
 
 
 
 /* PagesNav Home  */
 
-.Home {
+/* .Home {
 
-}
+} */
 
-.CardRecipe {
+.CardRecipe{
     width: 100%;
     height: auto;
-    background: #333 url("././images/recipe2.jpeg");
+    background: url("../Styles/images/recipe2.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;   
@@ -254,7 +230,7 @@ h4 {
 .CardPantry {
     width: 100%;
     height: auto; 
-    background: #333 url("././images/pantry3.jpeg");
+    background: url("../Styles/images/pantry3.jpeg");
     background-repeat: no-repeat;
     background-size: cover;  
 }
@@ -262,14 +238,14 @@ h4 {
 .CardReceipt {
     width: 100%;
     height: auto; 
-    background: #333 url("././images/receipts1.jpeg");
+    background: url("../Styles/images/receipts1.jpeg");
     background-repeat: no-repeat;
     background-size: cover;  
 }
-
+/* 
 .card-content {
     padding: 0em;
-}
+} */
 
 .card-title {
     margin: 0;
@@ -279,9 +255,10 @@ h4 {
     font-size: 30px;
 }
 
-.Home {
+/* .Home {
 
-}
+} */
+
 ul {
     list-style: none;
     margin: 0;
@@ -296,7 +273,7 @@ li {
 
 /* Form  */
 
-.formSubmit {
+/* .formSubmit {
     height: 80%;
     display: flex;
     flex-direction: column;
@@ -310,9 +287,7 @@ li {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 14px;
 
-}
-
-
+} */
 
 /* Media Queries  */
 

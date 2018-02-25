@@ -66,6 +66,7 @@ p {
 
 .btn {
     display: inline-block;
+    justify-content: space-around;
     color: rgb(184, 151, 109);
     background-color: black;
     font-family: 'Architects Daughter', cursive;
@@ -227,6 +228,4 @@ p {
     #section-b li {
         width: 31%;
     }
-
-
 }

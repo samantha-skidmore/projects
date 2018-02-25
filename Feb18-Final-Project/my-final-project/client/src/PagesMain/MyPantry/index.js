@@ -9,4 +9,4 @@ function MyPantry(props) {
         </div>
     )
 }
-export default MyPantry;
+export default MyPantry; 

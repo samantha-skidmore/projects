@@ -11,7 +11,7 @@ import { addRecipe } from "../../../Redux/recipes.js";
 import { removeRecipe } from "../../../Redux/recipes.js";
 import { editRecipe } from "../../../Redux/recipes.js";
 import Form from "../../../shared/Form";
-import "../../Styles/styles.css"
+import "../../Styles/styles.css" 
 
 //I think I need to make this into a class, maintain state and toggle the view.  Unsure how to do that
   

@@ -21,7 +21,7 @@ function PagesNav(props) {
                 <FindRecipe />
                 <Resources />
             </div>
-    )
+    )  
 }
 
 export default PagesNav;
