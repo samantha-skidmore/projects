@@ -3,7 +3,7 @@
 const express = require("express");
 const issueRouter = express.Router();
 const issueModel = require("../models/models.js");
-const commentModel = require("../models/comments.js");
+// const commentModel = require("../models/comments.js");
 
 issueRouter.route("/")
     .post((req, res) => {
@@ -12,7 +12,7 @@ issueRouter.route("/")
             console.log(foundIssue)
             if (err) {
                 console.error(err);
-            } else {
+            } else { 
                 res.send(foundIssue);
             }
         });

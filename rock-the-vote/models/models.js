@@ -1,7 +1,7 @@
 // rock-the-vote/models/models.js
 
 const mongoose = require("mongoose");
-const Schema = mongoose.Schema;
+// const Schema = mongoose.Schema;
 
 const issueSchema = new mongoose.Schema({
     "title": {
@@ -22,7 +22,11 @@ const issueSchema = new mongoose.Schema({
     },
     totalVotes: {
         type: Number,
-        default: 0
+        default: 0 
+    },
+    comments: {
+        type: [String],
+        required: false
     }
 })
 

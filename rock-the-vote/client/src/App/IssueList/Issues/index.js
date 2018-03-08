@@ -4,8 +4,9 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { updatedIssue } from "../../../redux/issues.js";
 import Comments from "./Issue/Comments/index.js";
-
-//import up arrows/down arrows
+import "../../Styles/issueList.css";
+import "../../Styles/images/arrowsDown.jpg";
+import "../../Styles/images/arrowsUp.jpg";
 
 class Issues extends Component {
     constructor(props) {
@@ -13,58 +14,81 @@ class Issues extends Component {
         this.state = {
             hideComments: true
         }
+
         this.toggleDisplay = this.toggleDisplay.bind(this);
+        // this.handleClick = this.handleClick.bind(this);
     }
 
-    const(name, issue, toggleDisplay) {
-        if (name === "upVote") {
-            this.props.upVote = String(this.props._id, this.props.upVotes + 1);
-
-        } else if (name === "downVote") {
-            this.props.downVote = String(this.props._id, this.props.downVotes + 1);
+    vote(type, issues) {
+        if (type === 'upVote') {
+            issues.upvotes = String(+issues.upvotes + 1);
+        } else if (type === 'downVote') {
+            issues.downvotes = String(+issues.downvotes + 1);
         }
+        issues.totalVotes = String(+issues.totalVotes + 1);
+        this.props.updateIssue(issues)
 
-        this.props.totalVotes = String(this.props.totalVotes + 1);
-        this.props.updatedIssue(issue)
+    }
 
-    toggleDisplay()
+    toggleDisplay() {
         this.setState({
             hideComments: false
         })
     }
 
+
+
+    
+    // vote(name, issues, toggleDisplay) {
+    //     if (name === "upVote") {
+    //         this.props.upVote = String(+this.props._id, this.props.upVotes + 1);
+
+    //     } else if (name === "downVote") {
+    //         this.props.downVote = String(+this.props._id, this.props.downVotes + 1);
+    //     }
+    //     issues.totalVotes = String(+issues.totalVotes + 1);
+    //     this.props.updatedIssue(issues);
+
+    //     toggleDisplay()
+    //     this.setState({
+    //         hideComments: false
+    //     })
+
+    // }
+
     render() {
-        const { issue } = this.props;
+        const { issues } = this.props;
         return (
             <div className="issueWrap">
                 <div className="info">
-                    <h1>{this.props.title}</h1>
-                    <h2>{this.props.description}</h2>
+                    <h1>{issues.title}</h1>
+                    <p className="description">{issues.description}</p>
                     <div className="votes">
-                        <h2 className="upvote">{this.props.upVotes}</h2>
-                        <h2 className="downvote">{this.props.downVotes}</h2>
+                        <h2 className="upvote">{issues.upVotes}</h2>
+                        <h2 className="downvote">{issues.downVotes}</h2>
                     </div>
-                    <h2>Total Votes: {this.props.upVotes + this.props.downVotes}</h2>
+                    <h2>Total Votes: {issues.upVotes + issues.downVotes}</h2>
                     <div>
-                        <span className="totalVotes">Total Votes: (issue.totalVotes || 0}</span>
+                        <span className="totalVotes">Total Votes: (issues.totalVotes || 0}</span>
                     </div>
                     <div>
-                        <button onClick={this.handleClick}name="upvote">Up-Vote</button>
-                        <button onClick={this.handleClick}name="downvote">Down-Vote</button>
+                        <button className="arrow" onClick={() => { this.vote("up", issues) }}><span> {issues.upvotes || 0}</span></button>
+                        <button className="arrow" onClick={() => { this.vote("down", issues) }}><span> {issues.downvotes || 0}</span></button>
                     </div>
-                </div>
-                <div className="comments">
-                    <Comments id={this.props._id}></Comments>
-                </div>
 
+                </div>
+                <h3>Comments:</h3>
+                <Comments id={issues._id}></Comments>
             </div>
-            )
-        }
+        )
+        
     }
+    
+}
 
-    const mapStateToProps = (state) => {
-        return {
-            issues: state.issues
-        }
+const mapStateToProps = (state) => {
+    return {
+        issues: state.issues
     }
-    export default connect(mapStateToProps, { updatedIssue })(Issues)
+}
+export default connect(mapStateToProps, { updatedIssue })(Issues);

@@ -20,7 +20,7 @@
     padding-top:3%;
     padding-bottom: 3%;
     padding-right: 2%;
-    background-image: url("../commentLeft.png");
+    background-image: url("../Styles/images/commentLeft.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     
@@ -31,7 +31,7 @@
     padding-top: 3%;
     padding-bottom: 3%;
     padding-left: 2%;
-    background-image: url("../commentRight.png");
+    background-image: url("../Styles/images/commentRight.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     /* grid-area: c;
@@ -46,7 +46,7 @@
 
 }
 .upvote{
-    background-image: url("../arrowsUp.jpg");
+    background-image: url("../Styles/images/arrowsUp.jpg");
     background-size: 50px 50px;
     height: 50px;
     width:50px;
@@ -56,7 +56,7 @@
     margin: 0
 }
 .downvote{
-    background-image: url("../arrowsDown.jpg");
+    background-image: url("../Styles/images/arrowsDown.jpg");
     background-size: 50px 50px;
     height: 50px;
     width:50px;

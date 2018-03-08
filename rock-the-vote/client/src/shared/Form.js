@@ -1,26 +1,20 @@
 // client/src/shared/Form.js 
 
 import React, { Component } from "react";
-// import { connect } from "react-redux";
-// import { addIssue, getIssues } from "../redux/issues";
-// import { Link } from "react-router-dom";
-import "./shared.css";
+import "../App/Styles/shared.css";
 
-class Form extends Component {
+export default class Form extends Component {
     constructor(props) {
-        super(props)
+        super(props);
         this.state = {
             inputs: {
                 title: "",
                 description: ""
-            },
-            route: false,
-
+            }
         }
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
         this.clearInputs = this.clearInputs.bind(this);
-        this.formSubmit = this.formSubmit.bind(this);
     }
 
     handleChange(e) {
@@ -45,7 +39,7 @@ class Form extends Component {
     }
 
     handleSubmit(e) {
-        const { add, id } = this.props;
+        let { add, id } = this.props;
         e.preventDefault();
         this.clearInputs();
         if (add) {
@@ -57,26 +51,21 @@ class Form extends Component {
     }
 
     render() {
-        const { title, description } = this.state.inputs;
-        if (this.state.route) {
-
+        let { title, description } = this.state.inputs;
             return (
-                <div className="formWrap">
-                    <Form onSubmit={this.handleSubmit} className="form" >
+                {/* <div className="formWrap"> */}
+                    <form onSubmit={this.handleSubmit} className="formWrap">
                         <div className="inputs">
                             <h3>Issue?</h3>
-                            <input className="inputTitle" onChange={this.handleChange} type="text" value={title} name="title" placeholder="Issue" />
+                            <input className="inputTitle" type="text" onChange={this.handleChange} placeholder="Issue" name="title" value={title}  />
                             <h3>Description</h3>
                             <textarea className="inputDescription" onChange={this.handleChange} type="text" value={description} name="description" placeholder="Description" />
                             <button className="submitButton"> Submit</button>
                         </div>
+                    </form>
 
-                    </Form>
-
-                </div>
+                // </div>
 
             )
-        }
     }
 }
-export default Form;

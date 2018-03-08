@@ -2,14 +2,14 @@
 
 import {createStore, combineReducers, applyMiddleware} from "redux";
 import thunk from "redux-thunk";
-import issues from "./issues.js";
+import Issues from "./issues.js"; 
 
-const rootReducer = (combineReducers({issues}));
+const rootReducer = (combineReducers({Issues}));
 
 const store = createStore(
     rootReducer, applyMiddleware(thunk));
 
 store.subscribe(()=>{
     console.log(store.getState())
-})
-export default createStore(combineReducers({ issues }), applyMiddleware(thunk));
+}) 
+export default createStore(combineReducers({ Issues }), applyMiddleware(thunk));  

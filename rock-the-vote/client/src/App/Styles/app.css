@@ -4,7 +4,7 @@
 }
 
 body{
-    background-image: url("./flag.jpg");
+    background-image: url("../Styles/images/flag.jpg");
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
     background-attachment: fixed;

@@ -2,25 +2,27 @@
 
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { addIssue, getIssues } from "../../redux/issues.js";
+import { getIssues, addIssue } from "../../redux/issues.js";
 import Issues from "../IssueList/Issues/index.js";
-import "../../App/IssueList/issue.css";
+
+import "../Styles/issueList.css";
 
 class IssueList extends Component {
     componentDidMount() {
-        this.props.getIssues()
+        this.props.getIssues();
     }
 
     render() {
-        const loading = this.props.loading;
-        const data = this.props.data;
+        let { data, loading } = this.props.issues;
+        // const loading = this.props.loading;
+        // let data = this.props.data;
         return (
             !loading ?
-                <div className="issueWrap">
-                    {data.sort((num1, num2) => {
+                <div className="IssueList">
+                    {this.props.data.sort((num1, num2) => {
                         num1 = num1.upvotes;
                         num2 = num2.upvotes;
-                        if (num1 > num2) {
+                        if(num1 > num2) {
                             return -1;
                         } else if (num1 < num2) {
                             return 1;
@@ -28,21 +30,23 @@ class IssueList extends Component {
                         return 0;
                     })
 
-                        .map((issue, index) => {
-                            return (
-                                <Issues key={index} {...issue} />    
-                            )           
-        }
+                        .map((issues, index) => {
+                            return <Issues key={index + issues.title} issues={issues} />
+                        }
                         )}
-                    }
-    
-                    <div>
-                        Loading...
-                    </div>
+                    )
+
                 </div>
-        
-        )    
+                :
+                <div>
+                    Loading...
+                </div>
+
+
+        )
+
     }
+
 }
 
 const mapStateToProps = (state) => {

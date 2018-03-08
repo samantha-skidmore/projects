@@ -4,45 +4,59 @@ import axios from "axios";
 const issuesUrl = "http://localhost:8080/issues/";
 
 
-const issuesReducer = (prevIssues = { data: [], loading: true }, action) => {
+const issuesReducer = (state = { data: [], loading: true }, action) => {
     switch (action.type) {
         case "ADD_ISSUE":
-            return {
-                ...prevIssues,
+            return { 
+                ...state,
                 loading: false,
-                data: action.data
-            }
+                // data: action.data
+                data: [...state.data, action.inputs]
+            };
 
         case "GET_ISSUES":
             return {
-                ...prevIssues,
+                // ...prevIssues,
                 loading: false,
-                data: action.data,
+                data: action.issues,
             }
 
-        case "DELETE_ISSUE":
-            return {
-                ...prevIssues,
-                loading: false,
-                data: prevIssues.data.filter((issue) => {
-                    return issue._id !== action.id
-                }
-            )
-        }
+        // case "DELETE_ISSUE":
+        //     return {
+        //         // ...prevIssues,
+        //         loading: false,
+        //         data: prevIssues.data.filter((issue) => {
+        //             return issue._id !== action.id
+        //         }
+        //     )
+        // }
 
         case "UPDATED_ISSUE":
-            return {
-                ...prevIssues,
-                loading: false,
-                data: prevIssues.data.map((issue) => {
-                    if (issue._id===action.id){
-                        return action.updatedIssue;
-                    } else {
-                        return issue;
-                    }
-                })
+        const newData = state.data;
+        for (let i = 0; i < newData.length; i++) {
+            if(action.updatedIssue._id === newData[i]._id) {
+                newData[i] = Object.assign(newData[i], action.updatedIssue);
             }
-        default: return prevIssues;
+        }
+            return {
+                // ...prevIssues,
+                ...state,
+                data: newData
+            }
+            default:
+                return state;
+
+        //         loading: false,
+
+        //         data: prevIssues.data.map((issue) => {
+        //             if (issue._id===action.id){
+        //                 return action.updatedIssue;
+        //             } else {
+        //                 return issue;
+        //             }
+        //         })
+        //     }
+        // default: return prevIssues;
     }
 }
 
@@ -54,8 +68,8 @@ export const addIssue = (inputs) => {
         axios.post(issuesUrl, inputs)
             .then((response) => {
                 dispatch({
-                    type: "ADD_ISSUES",
-                    data: response.data,
+                    type: "ADD_ISSUE",
+                    inputs: response.data,
                     // loading: true
                 })
             })
@@ -72,7 +86,7 @@ export const getIssues = (inputs) => {
             .then(response => {
                 dispatch({
                     type: "GET_ISSUES",
-                    data: response.data,
+                    issues: response.data,
                     // loading: true
                 })
             })

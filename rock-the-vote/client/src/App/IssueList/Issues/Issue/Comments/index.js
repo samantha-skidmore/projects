@@ -1,9 +1,9 @@
 // src/App/IssueList/Issues/Comments/index.js 
 
 import React, { Component } from "react";
-// import { connect } from "react-redux";
-// import axios from "axios";
-import "./comments.css";
+import { connect } from "react-redux";
+import { updatedIssue } from "../../../../../redux/issues.js";
+import "../../../../Styles/comments.css";
 
 class Comments extends Component {
     constructor(props) {
@@ -11,57 +11,68 @@ class Comments extends Component {
         this.state = {
             comment: ""
         }
+        this.handleChange = this.handleChange.bind(this);
+        this.commentSubmit = this.commentSubmit.bind(this);
+        this.clearInputs = this.clearInputs.bind(this);
+        this.commentDelete = this.commentDelete.bind(this);
     }
+
     handleChange(e) {
-        let { value } = e.target;
-        this.setState((prevState) => {
-            return {
+        const { value } = e.target;
+        this.setState({
                 comment: value
             }
-        });
+        );
     }
     clearInputs() {
         this.setState({
-            comment: ""
-        });
+            comment: ""       
+        })
     }
+
     commentSubmit(e) {
         e.preventDefault();
-        let { issueCurrent } = this.props;
-        let { comment } = this.state;
-        issueCurrent.comments.push(comment);
-        this.props.issueEdit(issueCurrent, issueCurrent._id);
-        this.clearInput();
+        const { issueCurrent } = this.props;
+        const { comments } = this.state;
+        issueCurrent.comments.push(comments);
+        this.props.updatedIssue(issueCurrent, issueCurrent._id);
+        this.clearInputs();
     }
-    commentDelete(comment) {
-        let { issueCurrent } = this.props;
-        for (let i = 0; i < issueCurrent.comments.length; i++) {
-            if (issueCurrent.comments[i] === comment) {
+    commentDelete(comments) {
+        const { issueCurrent } = this.props;
+        for (let i = 0; i < issueCurrent.comment.length; i++) {
+            if (issueCurrent.comments[i] === comments) {
                 issueCurrent.comments.splice(i, 1);
                 break;
             }
         }
-        this.props.issueEdit(issueCurrent, issueCurrent._id);
+        this.props.updatedIssue(issueCurrent, issueCurrent._id);
     }
     render() {
         return (
             <div>
-                <div>
-                    {this.props.issueCurrent.comments.map((comment, index) => {
+                <div className="comments">
+                    {this.props.issueCurrent.comments.map((comments, index) => {
                         return (
                             <div className="commentSingle" key={index}>
-                                <div className="commentText">{comment}</div>
-                                <button className="commentDelete" onClick={() => { this.commentDelete(comment) }}>Delete</button>
+                                <div className="commentText">{comments}</div>
+                                <button className="commentDelete" onClick={() => { this.commentDelete(comments) }}>Delete</button>
                             </div>
                         );
                     })}
                 </div>
+                
                 <form className="commentForm" onSubmit={this.commentSubmit}>
-                    <textarea className="commentBox" onChange={this.handleChange} value={this.state.comment} name="comment" placeholder="Leave Comment Here" ></textarea>
+                    <textarea className="commentBox" onChange={this.handleChange} value={this.state.comments} name="comment" placeholder="Leave Comment Here" ></textarea>
                     <button className="Post">POST</button>
                 </form>
             </div>
         )
     }
 }
-export default Comments;
+const mapStateToProps = (state) => {
+    return {
+        issues: state.issues
+    }
+}
+export default connect(mapStateToProps, { updatedIssue })(Comments);
