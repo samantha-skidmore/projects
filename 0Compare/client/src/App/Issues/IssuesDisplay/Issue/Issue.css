@@ -1,0 +1,25 @@
+.issue-wrapper {
+    width: 90%;    
+    padding: 15px;
+    margin: 25px;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+}
+
+.issue-description {
+    margin: 15px 0;
+}
+
+.voting {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.thumb {
+    padding: 0 5px;
+}
+
+.thumb:hover {
+    cursor: pointer;
+}

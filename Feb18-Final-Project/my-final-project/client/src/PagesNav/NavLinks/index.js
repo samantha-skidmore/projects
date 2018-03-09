@@ -16,7 +16,7 @@ function NavLinks(props) {
                 <button><Link to="/Resources">Resources</Link></button>
         </div>
 
-            )
+            ) 
         }
         
 export default NavLinks; 

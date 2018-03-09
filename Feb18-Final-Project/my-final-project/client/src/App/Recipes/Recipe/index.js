@@ -15,7 +15,7 @@ import "../../Styles/styles.css"
 
 //I think I need to make this into a class, maintain state and toggle the view.  Unsure how to do that
   
-
+ 
 function Recipe(props) {
     let { id, title, notes, ingredients, instructions, removeRecipe } = props;
 
