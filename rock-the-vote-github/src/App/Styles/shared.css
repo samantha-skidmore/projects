@@ -1,0 +1,79 @@
+/* rock-the-vote/client/src/shared/shared.css  */
+
+body{
+    margin: 0;
+}
+.formWrap{
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    width: 500px;            
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px auto;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+    
+}
+.form{
+    display: flex;
+    width: auto;
+    height: 100%;
+    align-items: center; 
+    align-content: center;
+}
+
+.inputs{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    
+}
+.input{
+    padding: 10px;
+}
+.title{
+    margin: 10px;
+
+}
+.inputDescription{
+    margin:10px;
+
+}
+.submitButton{
+    margin: 10px;
+    width: 100px;
+}
+
+.title {
+    height: 30px;
+    width: 400px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+}
+
+.form-description {
+    height: 150px;
+    width: 400px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    resize: none;
+}
+
+@media(max-width: 525px) {
+    .formStyle {
+        height: 300px;
+        width: 90%;
+    }
+
+    .titleStyle {
+        width: 80%;
+    }
+
+    .descriptionStyle {
+        width: 80%;
+    }
+}

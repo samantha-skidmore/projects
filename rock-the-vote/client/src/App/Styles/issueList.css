@@ -1,0 +1,84 @@
+/* issueList.css */
+
+.IssueList {
+    display: flex;
+    flex-direction: column;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    color: darkred;
+    
+}
+
+.issueWrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 200px;
+}
+
+.issueWrap info {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 24px;
+    color: navy;
+}
+
+.issueWrap description {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    color: navy;
+}
+
+.upVote{
+    background-image: url("../Styles/images/thumbs-up.png");
+    background-size: 50px 50px;
+    height: 50px;
+    width:50px;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: 0
+}
+
+.downVote{
+    background-image: url("../Styles/images/thumbs-down.png");
+    background-size: 50px 50px;
+    height: 50px;
+    width:50px;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: 0;
+}
+
+.votes{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+
+}
+
+.totalVotes {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.thumbs {
+    padding: 0 5px;
+}
+
+.thumbs:hover {
+    cursor: pointer;
+}
+
+.issueForm {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: darkgrey;
+    background-repeat: no-repeat;
+    color: darkred;
+}
+
+h3 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+    color: darkred;
+    font-weight: bolder;
+}

@@ -1,0 +1,39 @@
+/* comments.css */
+
+.comments {
+    display: flex;
+    background-color: navy;
+    color: darkgrey;
+}
+
+.commentSingle {
+    display: flex;
+    justify-content: space-between;
+}
+
+.commentText {
+    color: darkred;
+}
+
+.commentDelete {
+    height: 25px;
+
+}
+
+.commentDelete:hover {
+    cursor: pointer;
+}
+
+.commentForm {
+    padding: 10px; 
+}
+
+.commentBox {
+    width: 95%;
+}
+
+.Post {
+    float: right;
+    margin-bottom: 15px;
+}
+
