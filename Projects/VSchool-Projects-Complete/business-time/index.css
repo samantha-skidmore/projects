@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+    margin: 0; 
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#wrapper {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 43% 5% 46% 6%;
+    grid-template-areas: 
+    "hdr hdr hdr" 
+    "nav nav nav" 
+    "sec1 sec2 sec3" 
+    "ft ft ft"
+}
+
+#wrapper header {
+    grid-area: hdr;
+    background-image: url("./images/pantry.jpeg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#wrapper header h1 {
+    font-family: 'Rammetto One', cursive; 
+    color: black;
+    font-size: 80px;
+}
+
+#wrapper nav {
+    grid-area: nav;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-color: black;
+    font-family: 'Architects Daughter', cursive;
+    
+}
+#wrapper nav a{
+    display: center;
+    margin: auto;
+    font-size: 20px;
+    color: white;
+    font-family: 'Architects Daughter', cursive;
+}
+
+
+
+#wrapper section h3 {
+    text-align: center;
+    font-size: 50px;
+
+}
+
+.receipts {
+    background-image: url("./images/receipt1.jpg");
+    background-size: auto 200%;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Architects Daughter', cursive;
+    color: black;
+    font-size: 100px;
+}
+
+.pantry {
+    background-image: url("./images/pantry3.jpeg");
+    background-size: auto 200%;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 100px;
+    color: black;
+    
+}
+
+.recipes {
+    background-image: url("./images/recipe3.jpeg");
+    background-size: auto 200%;
+    background-repeat: no-repeat;
+    color: black;
+    font-family: 'Architects Daughter', cursive;
+}
+
+#wrapper footer {
+    grid-area: ft;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+    color: white;
+
+}
+
+#wrapper footer span {
+    font-size: 20px;
+    margin-left: 2em;
+}
