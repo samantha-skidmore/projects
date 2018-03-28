@@ -1,0 +1,91 @@
+/* issuesDisplay.css */
+
+.IssuesDisplay {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-repeat: no-repeat;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    color: darkred;
+    background-color: rgb(9, 9, 52);
+    
+} 
+
+.issueWrap {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    flex: 1 1 200px;
+}
+
+.info {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    color: lightgrey;
+}
+
+.description {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    color: lightgrey;
+    margin: 15px 0;
+}
+
+.upVote{
+    background-image: url("../Styles/images/thumbs-up.png");
+    background-size: 50px 50px;
+    height: 50px;
+    width:50px;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: 0
+}
+
+.downVote{
+    background-image: url("../Styles/images/thumbs-down.png");
+    background-size: 50px 50px;
+    height: 50px;
+    width:50px;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: 0;
+}
+
+.votes{
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    margin: 15px;
+
+}
+
+.totalVotes {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.thumbs {
+    padding: 0 5px;
+}
+
+.thumbs:hover {
+    cursor: pointer;
+}
+
+.issueForm {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: darkgrey;
+    background-repeat: no-repeat;
+    color: darkred;
+}
+
+h3 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+    color: darkred;
+    font-weight: bolder;
+}

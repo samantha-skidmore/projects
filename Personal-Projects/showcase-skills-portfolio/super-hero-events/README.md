@@ -1,0 +1,1 @@
+This is a completed assignment for V School.  This is using React and Props.  Notice when you click on the superhero a famous catchphrase pops up in a dialog box.

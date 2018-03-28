@@ -1,0 +1,30 @@
+/* navbar.css */
+
+.navBarWrapper {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: left;
+    background-repeat: no-repeat;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 100vw;
+    height: auto;
+    
+     
+}
+
+.link {
+    color: antiquewhite;
+    font-size: 30px;
+    padding: 20px;
+    text-decoration: none;
+   
+}
+
+.link:hover {
+    /* color: rgb(6, 6, 40); */
+    background-color: antiquewhite;
+    color: rgb(74, 4, 4);
+    font-weight: bolder;
+    font-size: 30px;
+    
+} 

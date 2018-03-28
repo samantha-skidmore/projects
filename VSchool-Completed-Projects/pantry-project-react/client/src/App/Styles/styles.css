@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css?family=Rammetto+One');
+@import url('https://fonts.googleapis.com/css?family=Architects+Daughter');
+
+/* Core Styles  */
+
+body {
+    /* display: grid; */
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(184, 151, 109);
+    color: black;
+    font-size: 1.1em;
+    line-height: 1.5;
+    text-align: center;
+    /* vertical-align: center;
+    text-decoration: none;
+    width: 100%vw;
+    height: 100%vh; */
+} 
+
+p {
+    margin: 0;
+    padding: 1em 0;
+}
+
+h1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: .1em;
+    text-align: center;
+    font-family: 'Rammetto One', cursive; 
+    color: black;
+    font-size: 110px;
+}
+
+h2 {
+    margin: 0;
+    padding: 1em 0;
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+h4 {
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+    text-decoration: none;
+}
+
+h5 {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 90px;
+    word-wrap: wrap;
+    background-color: rgb(184, 151, 109)
+}
+
+.Add {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(184, 151, 109);
+    width: 100%;
+    
+
+}
+.listTitle {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: rgb(184, 151, 109);
+    padding: 1em 2em;
+    border: 2px solid black;
+    margin: .1em 0;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 23px;
+    font-weight: bolder;
+    text-decoration: none;
+
+}
+.style {
+    display: flex;
+    flex-direction: column;
+}
+
+.Home ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; 
+}
+
+.Home li {
+    margin-bottom: 1em;
+    color: #333; 
+ 
+}
+
+.formSubmit {
+    height: 100%;
+    display: flex;
+    background-color: rgb(184, 151, 109);
+    flex-direction: column;
+    justify-content: space-around;
+    min-width: 350px;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    vertical-align: center;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    text-align: center;
+}
+
+.formSubmit input {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(184, 151, 109);
+    border: solid black 2px;
+    width: 100%;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    vertical-align: center;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+
+}
+
+.formSubmit instructions {
+    font-size: 18px;
+    color: black;
+    background-color: oldlace;
+}
+
+/* Media Queries */
+
+@media(min-width: 600px) {
+    /* .grid {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+    } */
+
+    /* .NavLinks {
+        display: flex;
+        flex-direction: row;
+        columns: 1;
+        column-gap: 2em;
+    }
+
+    .NavLinks a {
+        padding-top: 0;
+    } */
+
+    /* ul {
+        grid-column: 2/4;
+        display: flex;
+        justify-content: space-around;   
+    }
+
+    li {
+        width: 31%;
+    } */
+
+    /* .main-footer {
+        grid-column: span 2;
+    } */
+    
+}
+
+

@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box; 
+    
+}         
+
+body {
+    block-size: 300px;
+    background-color:  antiquewhite; 
+
+}
+#allBoxes {
+    margin-left: 200px;
+    margin-right: 200px;
+    width: 768px;
+
+}
+.boxLightPink {
+    /* display: inline-block; */
+    background-color: #F5C6D6;
+    height: 125px;
+    width: 100%;
+    /* position: 100% Center;
+    border: solid white; */
+
+}
+.boxDarkPink {
+    display: inline-block;
+    background-color: #EE2E84;
+    height: 125px;
+    width: 25%;
+    border: solid white;
+}
+.boxLightBlue {
+    display: inline-block;    
+    background-color: #85CFD8;
+    height: 125px;
+    width: 50%;
+    border: solid white;
+}
+.boxLightGreen {
+    display: inline-block;
+    background-color: #8DC63F;
+    height: 125px;
+    width: 75%;
+    border: solid white;
+}
+.boxOrange {
+    display: inline-block;
+    background-color: #E76E34;
+    height: 125px;
+    width: 25%;
+    border: solid white;
+}
+
+  * {
+    box-sizing: border-box;
+    font-size: 0px;
+}
+
+#allBoxes {
+    max-width: 75%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.boxLightPink {
+    background-color: #F5C6D6;
+}
+
+.boxDarkPink {
+    background-color: #EE2E84;
+    width: 25%;
+}
+
+.boxLightBlue {
+    background-color: #85CFD8;
+    width: 50%;    
+}
+
+.boxLightGreen {
+    background-color: #8DC63F;
+    width: 75%;    
+}
+
+.boxOrange {
+    background-color: #E76E34;
+    width: 25%;    
+}
+
+@media (max-width: 768px) {
+    .boxLightPink, .boxDarkPink, .boxLightBlue, .boxLightGreen, .boxOrange {
+        height: 100px;
+        width: 100%;
+    }
+}

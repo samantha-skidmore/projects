@@ -1,0 +1,1 @@
+This simple calculator assignment was one of my beginning assignments learning functions and utilitizing document.GetElementById.  This includes CSS but not using a lot in the HTML.

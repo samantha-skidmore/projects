@@ -1,0 +1,43 @@
+
+[{
+    "id": 0,
+    "name": "Superman",
+    "CatchPhrase": "Up, Up, and Away",
+    "imgUrl": "http://hdqwalls.com/wallpapers/superman-in-batman-vs-superman-movie.jpg"
+},
+{
+    "id": 1,
+    "name": "Wonder Woman",
+    "CatchPhrase": "My mother sculpted me from clay and I was brought to life by Zeus.",
+    "imgUrl": "http://www.screengeek.net/wp-content/uploads/2017/05/wonder-woman.png"
+},
+{
+    "id": 2,
+    "name": "Batman",
+    "CatchPhrase": "It's not who I am underneath, but what I do that defines me.",
+    "imgUrl": "http://www.technobuffalo.com/wp-content/uploads/2014/05/Batman-Arkham-Knight-1.jpg"
+},
+{
+    "id": 3,
+    "name": "Iron Man",
+    "CatchPhrase": "I AM IRON MAN.",
+    "imgUrl": "http://img3.wikia.nocookie.net/__cb20130522160958/marvelmovies/images/e/e3/Iron_man_mark_7.png"
+},
+{
+    "id": 4,
+    "name": "Thor",
+    "CatchPhrase": "I am Thor...Son of Odin.",
+    "imgUrl": "https://www.quirkybyte.com/wp-content/uploads/2016/08/thor-chris-hemsworth.jpg"
+},
+{
+    "id": 5,
+    "name": "The Hulk",
+    "CatchPhrase": "Hulk Smash!",
+    "imgUrl": "http://cdn.collider.com/wp-content/uploads/2017/07/thor-ragnaronk-image-hulk.jpg"
+},
+{
+    "id": 6,
+    "name": "Captain America",
+    "CatchPhrase": "If they hurt you...hurt 'em back.  If they kill you, walk it off.",
+    "imgUrl": "https://media.vanityfair.com/photos/545f7baccb308b5575a47dbc/master/w_768,c_limit/image.jpg"
+}]

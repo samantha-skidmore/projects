@@ -1,0 +1,1 @@
+This is my christmas game assignment.  Please type node index.js in the command line to play the game.

@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Rammetto+One');
+@import url('https://fonts.googleapis.com/css?family=Architects+Daughter');
+
+
+.header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 450px;
+    width: 100%;
+    color: rgb(184, 151, 109);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 0;
+    background-image: url("../Styles/images/pantry.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    justify-content: center;
+
+}
+
+.header h1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: .2em;
+    font-family: 'Rammetto One', cursive; 
+    color: black;
+    font-size: 110px;
+
+}

@@ -1,0 +1,1 @@
+This is a completed responsive color grid assignment.  This is to showcase HTML and CSS.

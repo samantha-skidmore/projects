@@ -1,0 +1,1 @@
+This is my speed clicker assignment showcasing HTML, CSS and JavaScript.

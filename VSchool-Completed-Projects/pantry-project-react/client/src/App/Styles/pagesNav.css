@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css?family=Rammetto+One');
+@import url('https://fonts.googleapis.com/css?family=Architects+Daughter');
+
+
+/* All */
+
+body {
+    display: grid;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(184, 151, 109);
+    color: black;
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: center;
+    vertical-align: center;
+    text-decoration: none;
+    width: 100%vw;
+    height: 100%vh;
+} 
+
+p {
+    margin: 0;
+    padding: 1em 0;
+}
+
+h1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: .1em;
+    text-align: center;
+    font-family: 'Rammetto One', cursive; 
+    color: black;
+    font-size: 110px;
+}
+
+h2 {
+    margin: 0;
+    padding: 1em 0;
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+h4 {
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+    text-decoration: none;
+}
+
+h5 {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 90px;
+    word-wrap: wrap;
+    background-color: rgb(184, 151, 109)
+}
+
+/* AddRecipe */
+
+.Add {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(184, 151, 109);
+    width: 100%;   
+}
+
+Form add {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+/* FAQs */
+
+.Facts {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+/* FindRecipe */
+
+.style {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-decoration: none;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 70px;
+    word-wrap: wrap;
+    background-color: rgb(184, 151, 109);
+    color: black;
+}
+
+.FindRecipeTitle {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-decoration: none;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 70px;
+    word-wrap: wrap;
+    background-color: rgb(184, 151, 109);
+    color: black;
+}
+
+/* Home */
+
+.Home {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.CardRecipe {
+    width: 100%;
+    height: auto;
+    background: url("../Styles/images/recipe2.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+.CardPantry {
+    width: 100%;
+    height: auto; 
+    background: url("../Styles/images/pantry3.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.CardReceipt {
+    width: 100%;
+    height: auto; 
+    background: url("../Styles/images/receipts1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+.CardTitle {
+    display: block;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    font-family: 'Rammetto One', cursive; 
+    color: black;
+    font-size: 20px;
+}
+
+.Home ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; 
+}
+
+.Home li {
+    margin-bottom: 1em;
+    color: #333; 
+ 
+}
+
+/* Main */
+
+/* Navbar */
+
+/* .NavLinks {
+    display: inline-block;
+    flex-direction: row;
+    height: 10%;
+    justify-content: center;
+    color: rgb(184, 151, 109);
+    background-color: black;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 18px;
+    font-weight: bolder;
+    text-decoration: none;
+    border: 2px solid black;
+} */
+
+.links {
+    display: flex;
+    flex-direction: row;
+    /* display: inline-block; */
+    font-family: 'Architects Daughter', cursive;
+    font-size: 15px;
+    font-weight: bolder;
+    background-color: black;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(184, 151, 109);
+    padding: 0em 1.5em;
+    border: 2px solid black;
+    margin: .1em 0;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    vertical-align: center;
+    justify-content: space-around;
+
+}
+
+.links:hover {
+    display: flex;
+    flex-direction: row;
+    /* display: inline-block; */
+    font-family: 'Architects Daughter', cursive;
+    font-size: 15px;
+    font-weight: bolder;
+    background-color: rgb(113, 8, 8);
+    text-decoration: none;
+    text-align: center;
+    color: oldlace;
+    padding: 0em 1.5em;
+    border: 2px solid black;
+    margin: .1em 0;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    vertical-align: center;
+    justify-content: space-around;
+}
+
+/* Resources */
+

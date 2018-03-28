@@ -1,0 +1,1 @@
+This is my JavaScript Node Calculator assignment for V School.  This is to showcase the beginning of learning node.
