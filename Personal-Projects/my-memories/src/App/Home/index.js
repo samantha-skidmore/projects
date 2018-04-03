@@ -1,16 +1,24 @@
+// my-memories/src/App/Home/index.js
+
 import React from "react";
-import { Switch, Route } from "react-router-dom";
-import ReactDOM from "react-dom";
+import NavBar from "../NavBar";
+// import { Switch, Route } from "react-router-dom";
+// import ReactDOM from "react-dom";
+// import FamilyHistory from "../FamilyHistory";
+// import Kids from "../Kids";
+// import OurFamily from "../OurFamily";
+// import Recipe from "../Recipe";
+// import Skidmore from "../Skidmore";
+// import Stewart from "../Stewart";
 
 import "../app.css";
+import "../../src.css";
 
-function Home(props) {
+function Home(props) { 
     return (
         <div className="home">
-            <div id="box">
-            </div>
-            {/* <Link to="/">Home</Link>
-        <Link to="/FamilyHistory">Family History</Link> */}
+                Home Page
+                <NavBar />
         </div>
     )
 }

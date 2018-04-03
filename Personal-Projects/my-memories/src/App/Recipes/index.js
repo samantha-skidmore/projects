@@ -1,4 +1,4 @@
-// my-memories/src/App/Stewart/index.js
+// my-memories/src/App/Recipe/index.js
 
 import React from "react";
 // import { Switch, Route } from "react-router-dom";
@@ -7,14 +7,14 @@ import AllPages from "../AllPages";
 import "../app.css";
 import "../../src.css";
 
-function Stewart(props) {
+function Recipes(props) {
     return (
         <div className="pages">
             <AllPages />
-                Stewart Page
+                Recipes Page
         </div>
     )
 };
 
-export default Stewart;
+export default Recipes;
  

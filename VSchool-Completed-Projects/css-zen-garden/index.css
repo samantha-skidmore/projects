@@ -99,7 +99,7 @@ h6 {
     grid-template-rows: 200px 70px;
     grid-template-areas: "hdr" "subhdr" "intro" "part" "req" "ftr" "subftr" "sidebar" "menu";
 }
- 
+  
 header {
     grid-area: hdr;
     width: 100%;
@@ -305,6 +305,8 @@ footer {
     border-bottom-style: solid;
     border-bottom-width: .5px;
 }
+
+
 
 @media screen and (min-width: 1130px) {
     .wrapper {
