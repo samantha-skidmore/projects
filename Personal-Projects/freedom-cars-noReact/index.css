@@ -1,0 +1,161 @@
+font-family: 'Limelight', cursive;
+font-family: 'Bowlby One', cursive;
+font-family: 'Mouse Memoirs', sans-serif;
+font-family: 'Krona One', sans-serif;
+font-family: 'Diplomata SC', cursive;
+
+
+* {
+    box-sizing: border-box; 
+    margin: 0; 
+    background-color: rgb(130, 5, 5);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(130, 5, 5);
+}
+
+#wrapper {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 60% 5% 35%;
+    grid-template-areas: 
+    "hdr hdr hdr" 
+    "nav nav nav" 
+    "sec1 sec2 sec3" 
+}
+
+#wrapper header {
+    grid-area: hdr;
+    background-image: url("./images/flag-wave copy.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#wrapper header h1 {
+    font-family: 'Diplomata SC', cursive; 
+    color: rgb(7, 7, 41);
+    font-size: 80px;
+}
+
+#wrapper nav {
+    grid-area: nav;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-color: rgb(7, 7, 41);
+    font-family: 'Limelight', cursive; 
+}
+
+#wrapper nav a{
+    display: center;
+    margin: auto;
+    font-size: 20px;
+    color: white;
+    font-family: 'Limelight', cursive;
+}
+ 
+#wrapper section h3 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.car1 {
+    background-image: url("./images/car1.JPG");
+    background-size: auto 200%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.car2 {
+    background-image: url("./images/car2.JPG");
+    background-size: auto 200%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.car3 {
+    background-image: url("./images/car3.JPG");
+    background-size: auto 200%;
+    background-repeat: no-repeat;
+}
+
+.Resource { 
+    height: 100vh;
+    width: 100vw;
+    background-image: url("./images/flagNav copy.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    justify-content: center;
+    font-family: 'Diplomata SC', cursive;
+}
+
+.Resource nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: antiquewhite;
+    background-color: rgb(7, 7, 41);
+    font-family: 'Limelight', cursive; 
+}
+    
+.Resource nav a{
+    display: center;
+    margin: auto;
+    font-size: 20px;
+    color: antiquewhite;
+    font-family: 'Limelight', cursive;
+}
+
+header h1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: antiquewhite;
+    font-size: 80px;
+    font-family: 'Diplomata SC', cursive;
+}
+
+#resourceLinks {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+    margin-top: 3%;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+    color: antiquewhite;
+    font-size: 30px;
+    font-family: 'Limelight', cursive;
+}
+
+#resourceLinks a {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+    color: antiquewhite;
+    font-size: 30px;
+    font-family: 'Limelight', cursive;
+}
+
+#resourceLinks a:hover {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+    color: rgb(130, 5, 5);
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Limelight', cursive;
+}
