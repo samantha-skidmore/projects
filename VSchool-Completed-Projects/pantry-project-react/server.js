@@ -1,6 +1,3 @@
-// BACK END USING EXPRESS/MONGOOSE
-// meetup-crud/server.js 
-
 //Dependencies
 const express = require("express");
 const mongoose = require("mongoose");
